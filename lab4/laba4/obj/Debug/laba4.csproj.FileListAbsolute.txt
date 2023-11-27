@@ -1,0 +1,15 @@
+C:\Users\090\source\repos\laba4\laba4\bin\Debug\laba4.exe.config
+C:\Users\090\source\repos\laba4\laba4\bin\Debug\laba4.exe
+C:\Users\090\source\repos\laba4\laba4\bin\Debug\laba4.pdb
+C:\Users\090\source\repos\laba4\laba4\obj\Debug\laba4.csproj.AssemblyReference.cache
+C:\Users\090\source\repos\laba4\laba4\obj\Debug\MainWindow.g.cs
+C:\Users\090\source\repos\laba4\laba4\obj\Debug\App.g.cs
+C:\Users\090\source\repos\laba4\laba4\obj\Debug\laba4_MarkupCompile.cache
+C:\Users\090\source\repos\laba4\laba4\obj\Debug\laba4_MarkupCompile.lref
+C:\Users\090\source\repos\laba4\laba4\obj\Debug\MainWindow.baml
+C:\Users\090\source\repos\laba4\laba4\obj\Debug\laba4.g.resources
+C:\Users\090\source\repos\laba4\laba4\obj\Debug\laba4.Properties.Resources.resources
+C:\Users\090\source\repos\laba4\laba4\obj\Debug\laba4.csproj.GenerateResource.cache
+C:\Users\090\source\repos\laba4\laba4\obj\Debug\laba4.csproj.CoreCompileInputs.cache
+C:\Users\090\source\repos\laba4\laba4\obj\Debug\laba4.exe
+C:\Users\090\source\repos\laba4\laba4\obj\Debug\laba4.pdb
