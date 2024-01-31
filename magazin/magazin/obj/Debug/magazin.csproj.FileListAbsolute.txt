@@ -1,0 +1,14 @@
+C:\Users\aremi\source\repos\magazin\magazin\bin\Debug\magazin.exe.config
+C:\Users\aremi\source\repos\magazin\magazin\bin\Debug\magazin.exe
+C:\Users\aremi\source\repos\magazin\magazin\bin\Debug\magazin.pdb
+C:\Users\aremi\source\repos\magazin\magazin\obj\Debug\magazin.csproj.AssemblyReference.cache
+C:\Users\aremi\source\repos\magazin\magazin\obj\Debug\magazin.Form1.resources
+C:\Users\aremi\source\repos\magazin\magazin\obj\Debug\magazin.Properties.Resources.resources
+C:\Users\aremi\source\repos\magazin\magazin\obj\Debug\magazin.csproj.GenerateResource.cache
+C:\Users\aremi\source\repos\magazin\magazin\obj\Debug\magazin.csproj.CoreCompileInputs.cache
+C:\Users\aremi\source\repos\magazin\magazin\obj\Debug\magazin.exe
+C:\Users\aremi\source\repos\magazin\magazin\obj\Debug\magazin.pdb
+C:\Users\aremi\source\repos\magazin\magazin\obj\Debug\magazin.Form2.resources
+C:\Users\aremi\source\repos\magazin\magazin\obj\Debug\magazin.Form3.resources
+C:\Users\aremi\source\repos\magazin\magazin\obj\Debug\magazin.Form5.resources
+C:\Users\aremi\source\repos\magazin\magazin\obj\Debug\magazin.Form4.resources

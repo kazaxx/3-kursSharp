@@ -1,0 +1,15 @@
+
+create database UNCLEPISTON
+use UNCLEPISTON
+
+
+
+CREATE TABLE user_ (
+    id_user INT PRIMARY KEY IDENTITY,
+    login_user VARCHAR(255),
+    password_user VARCHAR(255),
+    roll_user VARCHAR(255)
+);
+
+INSERT INTO user_ (id_user, login_user, password_user, roll_user)
+VALUES (1, 'admin', 'password123', 'admin');
