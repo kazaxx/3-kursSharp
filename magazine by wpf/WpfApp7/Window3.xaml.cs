@@ -24,13 +24,12 @@ namespace WpfApp7
             InitializeComponent();
         }
 
-        private void Window3_Loaded(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            // Получаем элемент WebBrowser
-            WebBrowser webBrowser = (WebBrowser)sender;
-
-            // Отображаем веб-страницу Google Maps
-            webBrowser.Navigate("https://maps.app.goo.gl/kwRBeyjSLRA3gzg79");
+            MainWindow mainwindow1 = new MainWindow();
+            mainwindow1.Show();
+            this.Visibility = Visibility.Collapsed; // Скрыть текущую форму
         }
+
     }
 }

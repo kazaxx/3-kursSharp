@@ -5,13 +5,83 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp7"
         mc:Ignorable="d"
-        Title="Window3" Height="450" Width="800">
+        Title="Window3" Height="470" Width="935"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                             BorderBrush="{TemplateBinding BorderBrush}"
+                             BorderThickness="{TemplateBinding BorderThickness}"
+                             CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <WrapPanel Background="#332E33" Height="74" Width="800" HorizontalAlignment="Center" VerticalAlignment="Top"></WrapPanel>
-        <Label Content="UnclePiston⚙️"  Foreground="#FFFDFDFD" FontSize="45" Margin="10,0,483,333" />
-        <WrapPanel Background="#fdf4e3" Height="360" Width="800" HorizontalAlignment="Center" Canvas.Top="74" VerticalAlignment="Top" Margin="0,74,0,0"></WrapPanel>
-        <Label Content="Тц  «Азбука вкуса»&#xD;&#xA;Ленинградское ш., д. 112/1" Margin="10,74,-10,-74" FontSize="20px" HorizontalAlignment="Left"/>
 
+        <!-- Header -->
+        <WrapPanel Background="#332E33" Height="74" Width="950" HorizontalAlignment="Center" VerticalAlignment="Top">
+          
+        </WrapPanel>
+        <Label Content="UnclePiston⚙️"  Foreground="#FFFDFDFD" FontSize="45" Width="322" Margin="10,0,603,0"/>
+
+        <!-- Metro Information -->
+        <Grid Margin="0,74,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!-- Content labels -->
+            <Border Background="#545254" Grid.Column="0">
+                <Label Content="Название и адрес" FontSize="20" HorizontalAlignment="Center" Foreground="White" Margin="0,20,0,-10"/>
+            </Border>
+            <Border Background="#545254" Grid.Column="1">
+                <Label Content="Станция метро" FontSize="20" HorizontalAlignment="Left" Foreground="White" Margin="10,20,0,-10" Width="160"/>
+            </Border>
+            <Border Background="#545254" Grid.Column="2">
+                <Label Content="Особенности" FontSize="20" HorizontalAlignment="Left" Foreground="White" Margin="0,20,0,-10"/>
+            </Border>
+            <Border Background="#545254" Grid.Column="2" Grid.ColumnSpan="2" Margin="225,0,0,0">
+                <Label Content="Режим работы" FontSize="20" HorizontalAlignment="Left" Foreground="White" Margin="-30,20,0,-10"/>
+            </Border>
+        </Grid>
+        <!-- Content -->
+        <WrapPanel Background="#fdf4e3" Height="286" Width="910" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,138,0,0">
+            <!-- Content Here -->
+        </WrapPanel>
+
+        <!-- Address -->
+        <Label Content="Москва, ул. Красная &#xD;&#xA;Пресня, д. 23, к. Б, стр. 1" Margin="20,148,0,227" FontSize="17" HorizontalAlignment="Left" Foreground="Black" FontWeight="Bold"/>
+        <Label Content="Улица 1905 года" Margin="275,161,0,214" FontSize="17" HorizontalAlignment="Left" Foreground="Black" FontWeight="Bold"/>
+        <Label Content="🏠🚚🛠️🗑️🔋" Margin="495,161,0,214" FontSize="17" HorizontalAlignment="Left" Foreground="Black" Width="165" FontWeight="Bold"/>
+        <Label Content="Круглосуточно" Margin="710,160,0,217" FontSize="17" HorizontalAlignment="Left" Foreground="Black" Width="165" FontWeight="Bold"/>
+        <WrapPanel Background="#545254" Height="1" Width="910" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="292" Margin="0,207,0,0"/>
+        <Label Content="Москва, пр-т Мира, д. 91" Margin="20,212,0,163" FontSize="17" HorizontalAlignment="Left" Foreground="Black" FontWeight="Bold" Width="240"/>
+        <Label Content="Алексеевская" Margin="275,212,0,163" FontSize="17" HorizontalAlignment="Left" Foreground="Black" FontWeight="Bold"/>
+        <Label Content="🏠🚚🛠️🗑️" Margin="495,213,0,162" FontSize="17" HorizontalAlignment="Left" Foreground="Black" Width="165" FontWeight="Bold"/>
+        <Label Content="10:00 - 22:00" Margin="710,213,0,168" FontSize="17" HorizontalAlignment="Left" Foreground="Black" Width="200" FontWeight="Bold"/>
+
+        <WrapPanel Background="#545254" Height="1" Width="910" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="292" Margin="0,247,0,0"/>
+        <Label Content="TЦ «Маркос Молл»&#xD;&#xA;Москва, Алтуфьевское ш.&#xD;&#xA;, д. 70, к. 1, TЦ «Маркос Молл»" Margin="20,253,0,125" FontSize="17" HorizontalAlignment="Left" Foreground="Black" FontWeight="Bold" Width="534"/>
+        <Label Content="Бибирево" Margin="275,263,0,112" FontSize="17" HorizontalAlignment="Left" Foreground="Black" FontWeight="Bold"/>
+        <Label Content="🏠🚚🛠️🗑️🔋" Margin="495,263,0,112" FontSize="17" HorizontalAlignment="Left" Foreground="Black" Width="165" FontWeight="Bold"/>
+        <Label Content="10:00 - 22:00" Margin="710,263,0,100" FontSize="17" HorizontalAlignment="Left" Foreground="Black" Width="212" FontWeight="Bold"/>
+        <WrapPanel Background="#545254" Height="1" Width="917" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="292" Margin="5,308,0,0"/>
+        <Label Content="Г/п Ржавки, МТРК &#xA;Солнечногорский район,&#xA;Ржавки, 2-й мкр-н, стр. 20" Margin="20,322,0,3" FontSize="17" HorizontalAlignment="Left" Foreground="Black" FontWeight="Bold" Width="255"/>
+        <Label Content="Котельники" Margin="275,346,0,27" FontSize="17" HorizontalAlignment="Left" Foreground="Black" FontWeight="Bold"/>
+        <Label Content="🏠🚚🛠️🗑️🔋" Margin="490,347,0,28" FontSize="17" HorizontalAlignment="Left" Foreground="Black" Width="145" FontWeight="Bold"/>
+        <Label Content="12:00 - 23:00" Margin="710,347,0,28" FontSize="17" HorizontalAlignment="Left" Foreground="Black" Width="212" FontWeight="Bold"/>
+        <Label Content="TЦ «Маркос Молл»&#xA;Москва, Алтуфьевское ш.&#xA;, д. 70, к. 1, TЦ «Маркос Молл»" Margin="20,253,0,125" FontSize="17" HorizontalAlignment="Left" Foreground="Black" FontWeight="Bold" Width="534"/>
+        <WrapPanel Background="#545254" Height="1" Width="930" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="292" Margin="-5,423,0,0"/>
+        <Button Content="Назад" Style="{StaticResource RoundedButtonStyle}" Background="#545254" Foreground="White" Margin="756,24,13,375" Click="BackButton_Click"/>
         <!-- Ensure the image source is correct -->
     </Grid>
 </Window>

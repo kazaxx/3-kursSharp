@@ -26,3 +26,31 @@ C:\Users\aremi\source\repos\WpfApp7\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.gen
 C:\Users\aremi\source\repos\WpfApp7\WpfApp7\obj\Debug\net8.0-windows\ref\WpfApp7.dll
 C:\Users\aremi\source\repos\WpfApp7\WpfApp7\obj\Debug\net8.0-windows\Window3.g.cs
 C:\Users\aremi\source\repos\WpfApp7\WpfApp7\obj\Debug\net8.0-windows\Window3.baml
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\bin\Debug\net8.0-windows\WpfApp7.exe
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\bin\Debug\net8.0-windows\WpfApp7.deps.json
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\bin\Debug\net8.0-windows\WpfApp7.runtimeconfig.json
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\bin\Debug\net8.0-windows\WpfApp7.dll
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\bin\Debug\net8.0-windows\WpfApp7.pdb
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\Window1.g.cs
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\Window2.g.cs
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\Window3.g.cs
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7_MarkupCompile.cache
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7_MarkupCompile.lref
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\Window1.baml
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\Window2.baml
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\Window3.baml
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.g.resources
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.Properties.Resources.resources
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.csproj.GenerateResource.cache
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.AssemblyInfoInputs.cache
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.AssemblyInfo.cs
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.csproj.CoreCompileInputs.cache
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.dll
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\refint\WpfApp7.dll
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.pdb
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.genruntimeconfig.cache
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\ref\WpfApp7.dll

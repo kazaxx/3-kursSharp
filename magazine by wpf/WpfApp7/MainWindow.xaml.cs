@@ -25,6 +25,7 @@ namespace WpfApp7
         {
             Window3 window3 = new Window3();
             window3.Show();
+            this.Visibility = Visibility.Collapsed; // Скрыть текущую форму
         }
 
         private void Button_OnDeliveryClicked(object sender, RoutedEventArgs e)
