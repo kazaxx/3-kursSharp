@@ -23,19 +23,21 @@ namespace WpfApp7
 
         private void Button_OnAboutClicked(object sender, RoutedEventArgs e)
         {
-            Window3 window3 = new Window3();
-            window3.Show();
-            this.Visibility = Visibility.Collapsed; // Скрыть текущую форму
+           
         }
 
         private void Button_OnDeliveryClicked(object sender, RoutedEventArgs e)
         {
-            // Ваш код для действия "Доставка"...
+            Window4 window4 = new Window4();
+            window4.Show();
+            this.Visibility = Visibility.Collapsed;
         }
 
         private void Button_OnStoresClicked(object sender, RoutedEventArgs e)
         {
-            // Ваш код для действия "Адреса магазинов"...
+            Window3 window3 = new Window3();
+            window3.Show();
+            this.Visibility = Visibility.Collapsed;
         }
 
         private void Button_OnAccountClicked(object sender, RoutedEventArgs e)

@@ -54,3 +54,5 @@ C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\ref
 C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.pdb
 C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\WpfApp7.genruntimeconfig.cache
 C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\ref\WpfApp7.dll
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\Window4.g.cs
+C:\Users\aremi\source\repos\magazine by wpf\WpfApp7\obj\Debug\net8.0-windows\Window4.baml

@@ -21,10 +21,9 @@
         <!-- Ваши элементы интерфейса здесь -->
         <Canvas>
             <!-- WrapPanel -->
-            <WrapPanel Background="#332E33" Height="74" Width="1200" HorizontalAlignment="Center" VerticalAlignment="Top">
-                <Label Content="UnclePiston⚙️" Height="68" Width="319" Foreground="#FFFDFDFD" FontSize="45" FontWeight="Bold"/>
-            </WrapPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="462" Canvas.Left="716" Canvas.Top="10" VerticalAlignment="Center" Height="41">
+            <WrapPanel Background="#332E33" Height="74" Width="1200" HorizontalAlignment="Center" VerticalAlignment="Top"></WrapPanel>
+            <Label Content="UnclePiston⚙️" Height="68" Width="319" Foreground="#FFFDFDFD" FontSize="45" FontWeight="Bold" Canvas.Left="10" Canvas.Top="1"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="462" Canvas.Left="716" Canvas.Top="10" VerticalAlignment="Top" Height="57">
                 <Button Margin="10" FontSize="16" Click="Button_OnAboutClicked" Height="23">
                     О нас
                 </Button>
@@ -39,12 +38,12 @@
                 </Button>
             </StackPanel>
             <WrapPanel Background="#fdf4e3" Height="221" Width="1200" HorizontalAlignment="Center" Canvas.Top="74" VerticalAlignment="Top"></WrapPanel>
-            <Label Content="Welcome to our store" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="85" Canvas.Left="163" Canvas.Top="123" FontWeight="Bold"/>
-            <Label Content="© on the market since 1998" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Canvas.Left="484" Canvas.Top="252"/>
+            <Label Content="Welcome to our store" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="85" Canvas.Left="160" Canvas.Top="123" FontWeight="Bold" Width="880"/>
+            <Label Content="© on the market since 1998" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Canvas.Left="484" Canvas.Top="251"/>
             <Polygon Points="50,50 50,273 239,273" Fill="#332E33" HorizontalAlignment="Center" Canvas.Left="-50" Canvas.Top="24" VerticalAlignment="Center" Height="269" Width="240"/>
             <Polygon Points="239,50 239,273 50,273" Fill="#332E33" HorizontalAlignment="Center" Canvas.Left="945" Canvas.Top="24" VerticalAlignment="Center" Height="269" Width="239"/>
             <WrapPanel Background="#332E33" Height="40" Width="1200" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="292"/>
-            <Label Content="We recommend that you" Foreground="White" FontSize="18" Canvas.Left="496" Canvas.Top="295" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="We recommend that you" Foreground="White" FontSize="18" Canvas.Left="496" Canvas.Top="295" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Canvas>
     </Grid>
 </Window>
