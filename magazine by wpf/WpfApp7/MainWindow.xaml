@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp7"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="1200"
+        Title="MainWindow" Height="900" Width="1200"
         WindowStartupLocation="CenterScreen"
         WindowState="Normal">
     <Window.Resources>
@@ -44,6 +44,13 @@
             <Polygon Points="239,50 239,273 50,273" Fill="#332E33" HorizontalAlignment="Center" Canvas.Left="945" Canvas.Top="24" VerticalAlignment="Center" Height="269" Width="239"/>
             <WrapPanel Background="#332E33" Height="40" Width="1200" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="292"/>
             <Label Content="We recommend that you" Foreground="White" FontSize="18" Canvas.Left="496" Canvas.Top="295" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
         </Canvas>
+        <WrapPanel Background="#332E33" Height="265" Width="1200" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,794,0,0"></WrapPanel>
+        <Label Content="8 (800) 505-52-90" Foreground="White" FontSize="14" Canvas.Left="496" Canvas.Top="418" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,804,0,0" Width="182" Height="39"/>
+        <Label Content="Настольное-приложение UnclePiston — технологичные запчасти для премиальных автомобилей" Foreground="White" FontSize="18" Canvas.Left="496" Canvas.Top="418" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,794,0,0"/>
+        <Label Content="info@UnclePiston.store" Foreground="White" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,824,0,0"/>
+        <Label Content="UNCL © 1998 — 2024" Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,824,0,0"/>
+        <Label Content="UnclePiston⚙️" Height="68" Width="262" Foreground="#FFFDFDFD" FontSize="25" Canvas.Left="871" Canvas.Top="816" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1000,806,0,0" FontWeight="Bold"/>
     </Grid>
 </Window>
