@@ -29,7 +29,7 @@
         <WrapPanel Background="#332E33" Height="74" Width="950" HorizontalAlignment="Center" VerticalAlignment="Top">
 
         </WrapPanel>
-        <Label Content="UnclePiston⚙️"  Foreground="#FFFDFDFD" FontSize="45" Width="322" Margin="10,0,603,0"/>
+        <Label Content="UnclePiston⚙️"  Foreground="#FFFDFDFD" FontSize="45" Width="322" Margin="10,0,603,0" />
 
         <!-- Metro Information -->
         <Grid Margin="0,74,0,0">
@@ -53,12 +53,7 @@
                 <Label Content="Режим работы" FontSize="20" HorizontalAlignment="Left" Foreground="White" Margin="-30,20,0,-10"/>
             </Border>
         </Grid>
-        <!-- Content -->
-        <WrapPanel Background="#fdf4e3" Height="286" Width="910" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,138,0,0">
-            <!-- Content Here -->
-        </WrapPanel>
-
-        <!-- Address -->
+        <WrapPanel Background="#fdf4e3" Height="286" Width="910" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,138,0,0"></WrapPanel>
         <Label Content="Москва, ул. Красная &#xD;&#xA;Пресня, д. 23, к. Б, стр. 1" Margin="20,148,0,227" FontSize="17" HorizontalAlignment="Left" Foreground="Black" FontWeight="Bold"/>
         <Label Content="Улица 1905 года" Margin="275,161,0,214" FontSize="17" HorizontalAlignment="Left" Foreground="Black" FontWeight="Bold"/>
         <Label Content="🏠🚚🛠️🗑️🔋" Margin="495,161,0,214" FontSize="17" HorizontalAlignment="Left" Foreground="Black" Width="165" FontWeight="Bold"/>

@@ -21,9 +21,14 @@ namespace WpfApp7
             InitializeComponent();
         }
 
+        private void Button_ExitClicked(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
         private void Button_OnAboutClicked(object sender, RoutedEventArgs e)
         {
-           
+
         }
 
         private void Button_OnDeliveryClicked(object sender, RoutedEventArgs e)
