@@ -10,13 +10,17 @@
 
   <ItemGroup>
     <None Remove="1686496051Mercedes_Benz_Logo_PNG.png" />
+    <None Remove="Image1.png" />
     <None Remove="m13.png" />
     <None Remove="payments.png" />
     <None Remove="pngwing.com %281%29.png" />
+    <None Remove="pngwing.com %284%29.png" />
     <None Remove="Power %283%29.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Image1.png" />
+    <Resource Include="pngwing.com (4).png" />
     <Resource Include="Power (3).png" />
   </ItemGroup>
 

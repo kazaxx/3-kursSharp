@@ -12,14 +12,11 @@
     <Grid>
         <Border x:Name="WindowBorder" Background="#332E33" CornerRadius="50">
             <Grid Margin="10">
-                <WrapPanel Background="#332E33" Height="74" Width="1700" HorizontalAlignment="Center" VerticalAlignment="Top" />
-                <Border Background="#fdf4e3" CornerRadius="50" Margin="0,74,0,0">
-                    <WrapPanel Height="896" Width="1600" HorizontalAlignment="Center" VerticalAlignment="Top"></WrapPanel>
-                </Border>
+                <Border Background="#fdf4e3" CornerRadius="50" Margin="0,75,0,49"></Border>
                 <WrapPanel Background="#332E33" Height="1" Width="640" Margin="80,163,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                <Image Margin="710,37,710,766" Source="/pngwing.com (4).png" Stretch="Fill"/>
-                <WrapPanel Background="#332E33" Height="1" Width="640" Margin="880,163,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                <Button Content="Button" Margin="520,476,845,465" Click="Button_Click_1"/>
+                <Image Margin="710,44,710,760" Source="pngwing.com (4).png" Stretch="Fill"/>
+                <WrapPanel Background="#332E33" Height="1" Width="640" Margin="860,163,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <Button Content="Button" Margin="600,801,765,140" Click="Button_Click_1"/>
             </Grid>
         </Border>
     </Grid>

@@ -23,5 +23,12 @@ namespace WpfApp7
         {
             InitializeComponent();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.Show();
+            this.Visibility = Visibility.Collapsed;
+        }
     }
 }

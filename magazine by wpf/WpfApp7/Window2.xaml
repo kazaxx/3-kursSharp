@@ -5,47 +5,59 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp7"
         mc:Ignorable="d"
-        Title="Window2" Height="417" Width="380">
+        Title="Window2" Height="512.4" Width="456"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True" Background="Transparent">
     <Window.Resources>
         <Style x:Key="RoundedButtonStyle" TargetType="Button">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}"
-                              BorderBrush="{TemplateBinding BorderBrush}"
-                              BorderThickness="{TemplateBinding BorderThickness}"
-                              CornerRadius="10">
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="10">
                             <ContentPresenter HorizontalAlignment="Center"
-                                            VerticalAlignment="Center"/>
+                                          VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
+        <Style x:Key="RoundedTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="10">
+                            <!-- Задаем радиус скругления -->
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
     </Window.Resources>
-    <Grid>
-        <!-- Внутри Grid используйте Viewbox для масштабирования содержимого -->
-        <Viewbox>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="241*"/>
-                    <RowDefinition Height="201*"/>
-                </Grid.RowDefinitions>
-                <Rectangle Fill="#fdf4e3" Height="380" VerticalAlignment="Top" Margin="-48,58,-48,0" Grid.RowSpan="2"/>
-                <Rectangle Fill="#332E33" Height="63" VerticalAlignment="Top" Margin="-48,0,-48,0"/>
-                <Label Content="UnclePiston⚙️" Foreground="#FFFDFDFD" FontSize="45" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,-3,0,0"/>
+    <Grid Margin="0">
+        <Border x:Name="WindowBorder" Background="#332E33" CornerRadius="60">
+            <Grid Margin="12">
+                <WrapPanel Background="#332E33" Height="88.8" Width="360" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,19.2,0,0" />
+                <Border Background="#fdf4e3" CornerRadius="60" Margin="0,88.8,0,0"></Border>
+                <Label Content="UnclePiston⚙️"  Foreground="#FFFDFDFD" FontSize="54" HorizontalAlignment="Center" Margin="0,0,0,120" />
+                <Button Content="Зарегистрироваться" Margin="102,358,102,86" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White"/>
+                <Button Content="Назад" Margin="102,407,102,33" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Button_Click_1"/>
+                <TextBox TextWrapping="Wrap" Text="" Margin="102,236,102,219" Style="{StaticResource RoundedTextBoxStyle}"/>
+                <TextBox TextWrapping="Wrap" Text="" Margin="102,163,102,292" Style="{StaticResource RoundedTextBoxStyle}"/>
+                <Label Content="Логин" Foreground="#000" FontSize="15" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,128,0,0"/>
+                <Label Content="Пароль" Foreground="#000" FontSize="15" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,201,0,0"/>
+                <TextBox TextWrapping="Wrap" Text="" Margin="102,309,102,146" Style="{StaticResource RoundedTextBoxStyle}"/>
+                <Label Content="Повторите пароль" Foreground="#000" FontSize="15" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,274,0,0"/>
 
-                <Label Content="Логин:" Foreground="#000" FontSize="15" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="49,87,0,0"/>
-                <Label Content="Пароль:" Foreground="#000" FontSize="15" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="49,163,0,0"/>
-                <TextBox TextWrapping="Wrap" Text="" Margin="57,117,57,96" FontSize="16"/>
-                <TextBox TextWrapping="Wrap" Text="" Margin="57,190,57,23" FontSize="16"/>
-
-                <!-- Применяем стиль к кнопкам -->
-                <Button Content="Зарегистрироваться" Margin="57,74,57,74" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Grid.Row="1"/>
-                <Button Content="Назад" Margin="57,123,57,26" Grid.Row="1" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" />
-                <TextBox TextWrapping="Wrap" Text="" Margin="57,10,57,126" FontSize="16" Grid.Row="1"/>
-                <Label Content="Повторите пароль:" Foreground="#000" FontSize="15" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="49,233,0,0" Grid.RowSpan="2"/>
             </Grid>
-        </Viewbox>
+        </Border>
     </Grid>
 </Window>

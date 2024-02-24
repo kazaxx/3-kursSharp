@@ -51,5 +51,12 @@ namespace WpfApp7
             window1.Show();
             this.Visibility = Visibility.Collapsed; // Скрыть текущую форму
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window5 window5 = new Window5();
+            window5.Show();
+            this.Visibility = Visibility.Collapsed;
+        }
     }
 }
