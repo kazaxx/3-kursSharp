@@ -1,0 +1,62 @@
+﻿<Window x:Class="WpfApp1.Registr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+      Title="Window2" Height="512.4" Width="456"
+     WindowStyle="None"
+     WindowStartupLocation="CenterScreen"
+     AllowsTransparency="True" Background="Transparent">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                         BorderBrush="{TemplateBinding BorderBrush}"
+                         BorderThickness="{TemplateBinding BorderThickness}"
+                         CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="RoundedTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border Background="{TemplateBinding Background}"
+                 BorderBrush="{TemplateBinding BorderBrush}"
+                 BorderThickness="{TemplateBinding BorderThickness}"
+                 CornerRadius="10">
+                            <!-- Задаем радиус скругления -->
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+    <Grid Margin="0">
+        <Border x:Name="WindowBorder" Background="#332E33" CornerRadius="60">
+            <Grid Margin="12">
+                <WrapPanel Background="#332E33" Height="88.8" Width="360" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,19.2,0,0" />
+                <Border Background="#fdf4e3" CornerRadius="60" Margin="0,88.8,0,0"></Border>
+                <Label Content="UnclePiston⚙️"  Foreground="#FFFDFDFD" FontSize="54" HorizontalAlignment="Center" Margin="0,0,0,379" />
+                <Button Content="Зарегистрироваться"  FontSize="17" Margin="102,358,102,86" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Register_Click"/>
+                <Button Content="Назад" FontSize="17" Margin="102,407,102,33" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Button_Click" />
+                <TextBox TextWrapping="Wrap" Text="" Margin="102,226,102,224" Style="{StaticResource RoundedTextBoxStyle}" x:Name="PasswordTextBox" VerticalContentAlignment="Center" FontSize="17"/>
+                <TextBox TextWrapping="Wrap" Text="" Margin="102,148,102,302" Style="{StaticResource RoundedTextBoxStyle}" x:Name="LoginTextBox" VerticalContentAlignment="Center" FontSize="17"/>
+                <Label Content="Логин" Foreground="#000" FontSize="15" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,113,0,0"/>
+                <Label Content="Пароль" Foreground="#000" FontSize="15" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,191,0,0"/>
+                <TextBox TextWrapping="Wrap" Text="" Margin="102,304,102,146" Style="{StaticResource RoundedTextBoxStyle}" x:Name="ConfirmPasswordTextBox" VerticalContentAlignment="Center" FontSize="17"/>
+                <Label Content="Повторите пароль" Foreground="#000" FontSize="15" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,269,0,0"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

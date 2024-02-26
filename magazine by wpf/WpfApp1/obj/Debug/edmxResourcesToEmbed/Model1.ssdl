@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище unclepistonModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Заказы">
+    <Key>
+      <PropertyRef Name="ID_заказа" />
+    </Key>
+    <Property Name="ID_заказа" Type="int" Nullable="false" />
+    <Property Name="Дата_заказа" Type="date" />
+    <Property Name="ID_клиента" Type="int" />
+    <Property Name="ID_состава" Type="int" />
+    <Property Name="ID_сотрудника" Type="int" />
+    <Property Name="Статус_заказа" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Запчасти">
+    <Key>
+      <PropertyRef Name="ID_запчасти" />
+    </Key>
+    <Property Name="ID_запчасти" Type="int" Nullable="false" />
+    <Property Name="Название_запчасти" Type="varchar" MaxLength="255" />
+    <Property Name="Производитель" Type="varchar" MaxLength="255" />
+    <Property Name="Цена" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ID_поставщика" Type="int" />
+  </EntityType>
+  <EntityType Name="Клиенты">
+    <Key>
+      <PropertyRef Name="ID_клиента" />
+    </Key>
+    <Property Name="ID_клиента" Type="int" Nullable="false" />
+    <Property Name="Фамилия" Type="varchar" MaxLength="255" />
+    <Property Name="Имя" Type="varchar" MaxLength="255" />
+    <Property Name="Отчество" Type="varchar" MaxLength="255" />
+    <Property Name="Адрес" Type="varchar" MaxLength="255" />
+    <Property Name="Телефон" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Пользователь">
+    <Key>
+      <PropertyRef Name="ID_пользователь" />
+    </Key>
+    <Property Name="ID_пользователь" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Логин_пользователя" Type="varchar" MaxLength="255" />
+    <Property Name="Пароль_пользователя" Type="varchar" MaxLength="255" />
+    <Property Name="Роль_пользователя" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Поставщики">
+    <Key>
+      <PropertyRef Name="ID_поставщика" />
+    </Key>
+    <Property Name="ID_поставщика" Type="int" Nullable="false" />
+    <Property Name="Название_поставщика" Type="varchar" MaxLength="255" />
+    <Property Name="Адрес" Type="varchar" MaxLength="255" />
+    <Property Name="Телефон" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Продажи">
+    <Key>
+      <PropertyRef Name="ID_продажи" />
+    </Key>
+    <Property Name="ID_продажи" Type="int" Nullable="false" />
+    <Property Name="ID_заказа" Type="int" />
+    <Property Name="Дата_продажи" Type="date" />
+    <Property Name="Сумма" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="Склад">
+    <Key>
+      <PropertyRef Name="ID_склада" />
+    </Key>
+    <Property Name="ID_склада" Type="int" Nullable="false" />
+    <Property Name="ID_запчасти" Type="int" />
+    <Property Name="Количество" Type="int" />
+  </EntityType>
+  <EntityType Name="Состав_заказа">
+    <Key>
+      <PropertyRef Name="ID_состава" />
+    </Key>
+    <Property Name="ID_состава" Type="int" Nullable="false" />
+    <Property Name="ID_запчасти" Type="int" />
+    <Property Name="Количество" Type="int" />
+  </EntityType>
+  <EntityType Name="Сотрудники">
+    <Key>
+      <PropertyRef Name="ID_сотрудника" />
+    </Key>
+    <Property Name="ID_сотрудника" Type="int" Nullable="false" />
+    <Property Name="ID_users" Type="int" />
+    <Property Name="ID_пользователь" Type="int" />
+    <Property Name="Фамилия" Type="varchar" MaxLength="255" />
+    <Property Name="Имя" Type="varchar" MaxLength="255" />
+    <Property Name="Отчество" Type="varchar" MaxLength="255" />
+    <Property Name="Дата_найма" Type="varchar" MaxLength="255" />
+    <Property Name="Должность" Type="varchar" MaxLength="255" />
+    <Property Name="Зарплата" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="Статус_заказа">
+    <Key>
+      <PropertyRef Name="ID_Статус_заказа" />
+    </Key>
+    <Property Name="ID_Статус_заказа" Type="int" Nullable="false" />
+    <Property Name="ID_заказа" Type="int" />
+    <Property Name="Статус_заказа" Type="varchar" MaxLength="255" />
+    <Property Name="Доставщик_заказа" Type="varchar" MaxLength="255" />
+    <Property Name="Город_отправления_заказа" Type="varchar" MaxLength="255" />
+    <Property Name="Дата_получения" Type="varchar" MaxLength="255" />
+    <Property Name="Название" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <Association Name="FK__Заказы__ID_клиен__5535A963">
+    <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="0..1" />
+    <End Role="Заказы" Type="Self.Заказы" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Клиенты">
+        <PropertyRef Name="ID_клиента" />
+      </Principal>
+      <Dependent Role="Заказы">
+        <PropertyRef Name="ID_клиента" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Заказы__ID_соста__571DF1D5">
+    <End Role="Состав_заказа" Type="Self.Состав_заказа" Multiplicity="0..1" />
+    <End Role="Заказы" Type="Self.Заказы" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Состав_заказа">
+        <PropertyRef Name="ID_состава" />
+      </Principal>
+      <Dependent Role="Заказы">
+        <PropertyRef Name="ID_состава" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Заказы__ID_сотру__5629CD9C">
+    <End Role="Сотрудники" Type="Self.Сотрудники" Multiplicity="0..1" />
+    <End Role="Заказы" Type="Self.Заказы" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Сотрудники">
+        <PropertyRef Name="ID_сотрудника" />
+      </Principal>
+      <Dependent Role="Заказы">
+        <PropertyRef Name="ID_сотрудника" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Запчасти__ID_пос__3B75D760">
+    <End Role="Поставщики" Type="Self.Поставщики" Multiplicity="0..1" />
+    <End Role="Запчасти" Type="Self.Запчасти" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Поставщики">
+        <PropertyRef Name="ID_поставщика" />
+      </Principal>
+      <Dependent Role="Запчасти">
+        <PropertyRef Name="ID_поставщика" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Продажи__ID_зака__5AEE82B9">
+    <End Role="Заказы" Type="Self.Заказы" Multiplicity="0..1" />
+    <End Role="Продажи" Type="Self.Продажи" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Заказы">
+        <PropertyRef Name="ID_заказа" />
+      </Principal>
+      <Dependent Role="Продажи">
+        <PropertyRef Name="ID_заказа" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Склад__ID_запчас__46E78A0C">
+    <End Role="Запчасти" Type="Self.Запчасти" Multiplicity="0..1" />
+    <End Role="Склад" Type="Self.Склад" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Запчасти">
+        <PropertyRef Name="ID_запчасти" />
+      </Principal>
+      <Dependent Role="Склад">
+        <PropertyRef Name="ID_запчасти" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Состав_за__ID_за__4CA06362">
+    <End Role="Запчасти" Type="Self.Запчасти" Multiplicity="0..1" />
+    <End Role="Состав_заказа" Type="Self.Состав_заказа" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Запчасти">
+        <PropertyRef Name="ID_запчасти" />
+      </Principal>
+      <Dependent Role="Состав_заказа">
+        <PropertyRef Name="ID_запчасти" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Сотрудник__ID_по__4F7CD00D">
+    <End Role="Пользователь" Type="Self.Пользователь" Multiplicity="0..1" />
+    <End Role="Сотрудники" Type="Self.Сотрудники" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Пользователь">
+        <PropertyRef Name="ID_пользователь" />
+      </Principal>
+      <Dependent Role="Сотрудники">
+        <PropertyRef Name="ID_пользователь" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Статус_за__ID_за__656C112C">
+    <End Role="Заказы" Type="Self.Заказы" Multiplicity="0..1" />
+    <End Role="Статус_заказа" Type="Self.Статус_заказа" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Заказы">
+        <PropertyRef Name="ID_заказа" />
+      </Principal>
+      <Dependent Role="Статус_заказа">
+        <PropertyRef Name="ID_заказа" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище unclepistonModelContainer">
+    <EntitySet Name="Заказы" EntityType="Self.Заказы" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Запчасти" EntityType="Self.Запчасти" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Клиенты" EntityType="Self.Клиенты" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Пользователь" EntityType="Self.Пользователь" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Поставщики" EntityType="Self.Поставщики" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Продажи" EntityType="Self.Продажи" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Склад" EntityType="Self.Склад" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Состав_заказа" EntityType="Self.Состав_заказа" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Сотрудники" EntityType="Self.Сотрудники" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Статус_заказа" EntityType="Self.Статус_заказа" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Заказы__ID_клиен__5535A963" Association="Self.FK__Заказы__ID_клиен__5535A963">
+      <End Role="Клиенты" EntitySet="Клиенты" />
+      <End Role="Заказы" EntitySet="Заказы" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Заказы__ID_соста__571DF1D5" Association="Self.FK__Заказы__ID_соста__571DF1D5">
+      <End Role="Состав_заказа" EntitySet="Состав_заказа" />
+      <End Role="Заказы" EntitySet="Заказы" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Заказы__ID_сотру__5629CD9C" Association="Self.FK__Заказы__ID_сотру__5629CD9C">
+      <End Role="Сотрудники" EntitySet="Сотрудники" />
+      <End Role="Заказы" EntitySet="Заказы" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Запчасти__ID_пос__3B75D760" Association="Self.FK__Запчасти__ID_пос__3B75D760">
+      <End Role="Поставщики" EntitySet="Поставщики" />
+      <End Role="Запчасти" EntitySet="Запчасти" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Продажи__ID_зака__5AEE82B9" Association="Self.FK__Продажи__ID_зака__5AEE82B9">
+      <End Role="Заказы" EntitySet="Заказы" />
+      <End Role="Продажи" EntitySet="Продажи" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Склад__ID_запчас__46E78A0C" Association="Self.FK__Склад__ID_запчас__46E78A0C">
+      <End Role="Запчасти" EntitySet="Запчасти" />
+      <End Role="Склад" EntitySet="Склад" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Состав_за__ID_за__4CA06362" Association="Self.FK__Состав_за__ID_за__4CA06362">
+      <End Role="Запчасти" EntitySet="Запчасти" />
+      <End Role="Состав_заказа" EntitySet="Состав_заказа" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Сотрудник__ID_по__4F7CD00D" Association="Self.FK__Сотрудник__ID_по__4F7CD00D">
+      <End Role="Пользователь" EntitySet="Пользователь" />
+      <End Role="Сотрудники" EntitySet="Сотрудники" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Статус_за__ID_за__656C112C" Association="Self.FK__Статус_за__ID_за__656C112C">
+      <End Role="Заказы" EntitySet="Заказы" />
+      <End Role="Статус_заказа" EntitySet="Статус_заказа" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

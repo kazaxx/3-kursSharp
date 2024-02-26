@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp1.Porshe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+    Title="Window5" Height="900" Width="1200"
+    WindowStyle="None"
+    WindowStartupLocation="CenterScreen"
+    AllowsTransparency="True" Background="Transparent">
+    <Grid>
+        <Border x:Name="WindowBorder" Background="#332E33" CornerRadius="50">
+            <Grid Margin="10">
+                <Border Background="#fdf4e3" CornerRadius="50" Margin="0,75,0,49"></Border>
+                <WrapPanel Background="#332E33" Height="1" Width="372" Margin="163,149,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <Image Margin="540,75,520,700" Source="/pngwing.com (4).png" Stretch="Fill"/>
+                <WrapPanel Background="#332E33" Height="1" Width="372" Margin="665,149,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <Button Content="Button" Margin="600,801,765,140" />
+                <ContentControl
+              Margin="10,185,10,79"
+              Content="{Binding CurrentView}"/>
+            </Grid>
+        </Border>
+        <Label Content="UnclePiston⚙️"  Foreground="#FFFDFDFD" FontSize="35" Margin="480,10,480,820" />
+    </Grid>
+</Window>
