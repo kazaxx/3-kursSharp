@@ -26,7 +26,11 @@ namespace WpfApp1
             {
                 if (Proverka(login, password))
                 {
-                    ShowError("Успешная авторизация!");
+                   Window1 window  = new Window1();
+                    window.Show();
+                    txtlogin.Clear();
+                    txtpassword.Clear();
+
                 }
                 else
                 {

@@ -9,19 +9,55 @@
     WindowStyle="None"
     WindowStartupLocation="CenterScreen"
     AllowsTransparency="True" Background="Transparent">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                         BorderBrush="{TemplateBinding BorderBrush}"
+                         BorderThickness="{TemplateBinding BorderThickness}"
+                         CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Border x:Name="WindowBorder" Background="#332E33" CornerRadius="50">
             <Grid Margin="10">
-                <Border Background="#fdf4e3" CornerRadius="50" Margin="0,75,0,49"></Border>
+                <Border Background="#fdf4e3" CornerRadius="50" Margin="0,75,0,20"></Border>
+
                 <WrapPanel Background="#332E33" Height="1" Width="372" Margin="163,149,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                <Image Margin="540,75,520,700" Source="/pngwing.com (4).png" Stretch="Fill"/>
+                <Image Margin="540,75,520,700" Source="pngwing.com (4).png" Stretch="Fill"/>
                 <WrapPanel Background="#332E33" Height="1" Width="372" Margin="665,149,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                <Button Content="Button" Margin="600,801,765,140" />
-                <ContentControl
-              Margin="10,185,10,79"
-              Content="{Binding CurrentView}"/>
             </Grid>
         </Border>
         <Label Content="UnclePiston⚙️"  Foreground="#FFFDFDFD" FontSize="35" Margin="480,10,480,820" />
+        <Border BorderThickness="2" BorderBrush="Black" CornerRadius="12" Margin="340,244,620,412" Background="#ffff"/>
+        <Border BorderThickness="2" BorderBrush="Black" CornerRadius="12" Margin="72,244,888,412" Background="#ffff"/>
+        <Border BorderThickness="2" BorderBrush="Black" CornerRadius="12" Margin="615,244,345,412" Background="#ffff"/>
+        <Border BorderThickness="2" BorderBrush="Black" CornerRadius="12" Margin="888,244,72,412" Background="#ffff"/>
+        <Image Margin="350,253,627,421" Source="/zap porshe4.jpg" Stretch="Fill"/>
+        <Image Margin="896,253,80,421" Source="/zap porshe2.jpg" Stretch="Fill"/>
+        <Image Margin="624,253,354,421" Source="zap porshe1.jpg" Stretch="Fill"/>
+        <Image Margin="80,253,896,421" Source="/zap porshe3.jpg" Stretch="Fill"/>
+        
+        <Button Content="В корзину" Margin="72,592,888,258" Style="{StaticResource RoundedButtonStyle}" FontSize="14" Background="#332E33" BorderBrush="Black" Foreground="White"/>
+        <Button Content="В корзину" Margin="615,592,345,258" Style="{StaticResource RoundedButtonStyle}" FontSize="14" Background="#332E33" BorderBrush="Black" Foreground="White"/>
+        <Button Content="В корзину" Margin="340,592,620,258" Style="{StaticResource RoundedButtonStyle}" FontSize="14" Background="#332E33" BorderBrush="Black" Foreground="White"/>
+        <Button Content="В корзину" Margin="888,592,72,258" Style="{StaticResource RoundedButtonStyle}" FontSize="14" Background="#332E33" BorderBrush="Black" Foreground="White" />
+        <Label Content="Подкрылок передний RH (правый) &#xA;V8 / 4.8 Petrol Bi-Turbo, &#xD;&#xA;95550496205 Cayenne &#xD;&#xA;95550496205" Margin="350,493,618,332" FontSize="15"/>
+        <Label Content="Фонарь задний RH (правый)&#xD;&#xA; наружный,Black Porsche &#xD;&#xA;Cayenne, 95863109622  &#xD;&#xA;" Margin="80,493,888,332" FontSize="15"/>
+        <Label Content="Пневмо подушка заднего &#xD;&#xA;амортизатора Porsche &#xD;&#xA;Panamera, 97033353317 " Margin="624,493,346,319" FontSize="15"/>
+        <Label Content="Фильтр воздушный Porsche 911,&#xD;&#xA; 99711013031 911 99711013031" Margin="896,493,72,332" FontSize="15"/>
+        <Label Content="8 726 ₽"  Foreground="Black" FontSize="18" Margin="406,557,674,290" FontWeight="Bold" />
+        <Label Content="22 178 ₽"  Foreground="Black" FontSize="18" Margin="679,557,401,290" FontWeight="Bold" />
+        <Label Content="53 906 ₽"  Foreground="Black" FontSize="18" Margin="952,557,128,290" FontWeight="Bold" />
+        <Label Content="36 324 ₽"  Foreground="Black" FontSize="18" Margin="136,559,944,288" FontWeight="Bold" />
+        <Button Content="Button" Margin="816,726,80,106" Click="Button_Click"/>
+
     </Grid>
 </Window>

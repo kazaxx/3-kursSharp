@@ -53,11 +53,13 @@ namespace WpfApp1
 
             MessageBox.Show("Пользователь успешно зарегистрирован!");
             ClearFields();
+            LoginTextBox.Clear();
+            PasswordTextBox.Clear();
+            ConfirmPasswordTextBox.Clear();
         }
 
         private void ShowError(string errorMessage)
         {
-            // Показываем ошибку на форме Error
             errorForm.ShowError(errorMessage);
         }
 

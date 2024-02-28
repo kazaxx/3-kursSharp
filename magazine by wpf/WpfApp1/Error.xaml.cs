@@ -27,7 +27,7 @@ namespace WpfApp1
         public void ShowError(string errorMessage)
         {
             ErrorLabel.Content = errorMessage;
-            ShowDialog(); // Показываем форму Error как модальное окно
+            ShowDialog();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

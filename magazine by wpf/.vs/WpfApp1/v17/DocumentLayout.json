@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\source\\repos\\wpfapp1\\wpfapp1\\vhod.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\vhod.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\source\\repos\\wpfapp1\\wpfapp1\\porshe.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\porshe.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\source\\repos\\wpfapp1\\wpfapp1\\vhod.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\vhod.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\source\\repos\\wpfapp1\\wpfapp1\\porshe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\porshe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\source\\repos\\wpfapp1\\wpfapp1\\registr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\source\\repos\\WpfApp1\\wpfapp1\\registr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\registr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\source\\repos\\wpfapp1\\wpfapp1\\registr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\registr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\source\\repos\\wpfapp1\\wpfapp1\\error.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\error.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\source\\repos\\wpfapp1\\wpfapp1\\error.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\error.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\source\\repos\\WpfApp1\\wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -33,6 +21,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\source\\repos\\WpfApp1\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\source\\repos\\wpfapp1\\wpfapp1\\error.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\error.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\source\\repos\\wpfapp1\\wpfapp1\\error.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\error.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,68 +38,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Vhod.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Vhod.xaml.cs",
-              "RelativeDocumentMoniker": "WpfApp1\\Vhod.xaml.cs",
-              "ToolTip": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Vhod.xaml.cs",
-              "RelativeToolTip": "WpfApp1\\Vhod.xaml.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAmwCwAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T21:08:21.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Vhod.xaml",
-              "DocumentMoniker": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Vhod.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\Vhod.xaml",
-              "ToolTip": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Vhod.xaml",
-              "RelativeToolTip": "WpfApp1\\Vhod.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-26T21:08:16.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Error.xaml.cs",
               "DocumentMoniker": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Error.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp1\\Error.xaml.cs",
               "ToolTip": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Error.xaml.cs",
               "RelativeToolTip": "WpfApp1\\Error.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAABGAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAUwB0AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T20:50:22.881Z",
+              "WhenOpened": "2024-02-28T16:50:54.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Error.xaml",
               "DocumentMoniker": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Error.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\Error.xaml",
               "ToolTip": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Error.xaml",
               "RelativeToolTip": "WpfApp1\\Error.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-26T20:43:18.307Z",
+              "WhenOpened": "2024-02-28T16:50:51.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Registr.xaml",
-              "DocumentMoniker": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Registr.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\Registr.xaml",
-              "ToolTip": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Registr.xaml",
-              "RelativeToolTip": "WpfApp1\\Registr.xaml",
+              "DocumentIndex": 0,
+              "Title": "Porshe.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Porshe.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Porshe.xaml.cs",
+              "ToolTip": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Porshe.xaml.cs",
+              "RelativeToolTip": "WpfApp1\\Porshe.xaml.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAkwB0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:49:08.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Porshe.xaml",
+              "DocumentMoniker": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Porshe.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\Porshe.xaml",
+              "ToolTip": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Porshe.xaml",
+              "RelativeToolTip": "WpfApp1\\Porshe.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-26T20:42:28.056Z",
+              "WhenOpened": "2024-02-28T15:47:56.683Z",
               "EditorCaption": ""
             },
             {
@@ -114,14 +98,14 @@
               "RelativeDocumentMoniker": "WpfApp1\\Registr.xaml.cs",
               "ToolTip": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\Registr.xaml.cs",
               "RelativeToolTip": "WpfApp1\\Registr.xaml.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAuwDwAAAAJAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAkwEYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T19:59:51.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml",
@@ -133,13 +117,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\aremi\\source\\repos\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
               "RelativeToolTip": "WpfApp1\\MainWindow.xaml.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAkwCIAAAA+AAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T18:57:14.679Z",
               "EditorCaption": ""

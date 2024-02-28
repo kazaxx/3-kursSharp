@@ -67,7 +67,7 @@
                 <Label Content="UnclePiston⚙️" Height="59" Width="183" Foreground="#FFFDFDFD" FontSize="25" Canvas.Left="871" Canvas.Top="816" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="882,666,0,0" FontWeight="Bold"/>
                 <Label Content="UnclePiston⚙️"  Foreground="#FFFDFDFD" FontSize="35" Width="322" Margin="37,6,716,651" />
                 <Label Content="© on the market since 1998" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" Canvas.Left="484" Canvas.Top="251" Margin="0,180,0,0"/>
-                <Button Content="Порше" Margin="348,350,348,229"/>
+                <Button Content="Порше" Margin="348,350,348,229" Click="Button_Click_2"/>
             </Grid>
         </Border>
         <Button Content="Товары" Margin="100,374,759,253" />

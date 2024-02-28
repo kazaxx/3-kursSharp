@@ -32,10 +32,7 @@
         <Border x:Name="WindowBorder" Background="#332E33" CornerRadius="0">
             <Grid Margin="12">
                 <Border Background="#fdf4e3" CornerRadius="0" Margin="0,10,0,10"></Border>
-                <!-- Установка свойств для Label -->
-                <Label Content="" Margin="0" FontSize="20" x:Name="ErrorLabel" FontWeight="Bold"
-                       HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-
+                <Label Content="" Margin="0" FontSize="20" x:Name="ErrorLabel" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             </Grid>
         </Border>
         <Button Content="Ок" Margin="230,190,230,30" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Button_Click"/>

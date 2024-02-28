@@ -29,12 +29,19 @@ namespace WpfApp1
         {
             Vhod vhod = new Vhod();
             vhod.Show();
-            this.Visibility = Visibility.Collapsed; // Скрыть текущую форму
+            this.Visibility = Visibility.Collapsed; 
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Porshe porshe = new Porshe();
+            porshe.Show();
+            this.Hide();
         }
     }
 }
