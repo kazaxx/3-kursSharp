@@ -13,10 +13,10 @@ namespace WpfApp1
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class unclepistonEntities : DbContext
+    public partial class unclepistonEntities1 : DbContext
     {
-        public unclepistonEntities()
-            : base("name=unclepistonEntities")
+        public unclepistonEntities1()
+            : base("name=unclepistonEntities1")
         {
         }
     

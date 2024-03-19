@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище unclepistonModelContainer" CdmEntityContainer="unclepistonEntities">
+  <EntityContainerMapping StorageEntityContainer="Хранилище unclepistonModelContainer" CdmEntityContainer="unclepistonEntities1">
     <EntitySetMapping Name="Заказы">
       <EntityTypeMapping TypeName="unclepistonModel.Заказы">
         <MappingFragment StoreEntitySet="Заказы">
@@ -42,7 +42,9 @@
           <ScalarProperty Name="ID_пользователь" ColumnName="ID_пользователь" />
           <ScalarProperty Name="Логин_пользователя" ColumnName="Логин_пользователя" />
           <ScalarProperty Name="Пароль_пользователя" ColumnName="Пароль_пользователя" />
-          <ScalarProperty Name="Роль_пользователя" ColumnName="Роль_пользователя" />
+          <ScalarProperty Name="Админ" ColumnName="Админ" />
+          <ScalarProperty Name="Сотрудник" ColumnName="Сотрудник" />
+          <ScalarProperty Name="Пользователь1" ColumnName="Пользователь" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

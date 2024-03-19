@@ -31,5 +31,10 @@ namespace WpfApp1
             this.Hide();
             
         }
+
+        private void SortByNameDescending(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

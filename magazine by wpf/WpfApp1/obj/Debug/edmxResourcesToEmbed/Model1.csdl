@@ -10,11 +10,11 @@
     <Property Name="ID_состава" Type="Int32" />
     <Property Name="ID_сотрудника" Type="Int32" />
     <Property Name="Статус_заказа" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Клиенты" Relationship="Self.FK__Заказы__ID_клиен__5535A963" FromRole="Заказы" ToRole="Клиенты" />
-    <NavigationProperty Name="Состав_заказа" Relationship="Self.FK__Заказы__ID_соста__571DF1D5" FromRole="Заказы" ToRole="Состав_заказа" />
-    <NavigationProperty Name="Сотрудники" Relationship="Self.FK__Заказы__ID_сотру__5629CD9C" FromRole="Заказы" ToRole="Сотрудники" />
-    <NavigationProperty Name="Продажи" Relationship="Self.FK__Продажи__ID_зака__5AEE82B9" FromRole="Заказы" ToRole="Продажи" />
-    <NavigationProperty Name="Статус_заказа1" Relationship="Self.FK__Статус_за__ID_за__656C112C" FromRole="Заказы" ToRole="Статус_заказа" />
+    <NavigationProperty Name="Клиенты" Relationship="Self.FK__Заказы__ID_клиен__5812160E" FromRole="Заказы" ToRole="Клиенты" />
+    <NavigationProperty Name="Состав_заказа" Relationship="Self.FK__Заказы__ID_соста__59FA5E80" FromRole="Заказы" ToRole="Состав_заказа" />
+    <NavigationProperty Name="Сотрудники" Relationship="Self.FK__Заказы__ID_сотру__59063A47" FromRole="Заказы" ToRole="Сотрудники" />
+    <NavigationProperty Name="Продажи" Relationship="Self.FK__Продажи__ID_зака__693CA210" FromRole="Заказы" ToRole="Продажи" />
+    <NavigationProperty Name="Статус_заказа1" Relationship="Self.FK__Статус_за__ID_за__5CD6CB2B" FromRole="Заказы" ToRole="Статус_заказа" />
   </EntityType>
   <EntityType Name="Запчасти">
     <Key>
@@ -25,9 +25,9 @@
     <Property Name="Производитель" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Цена" Type="Decimal" Precision="10" Scale="2" />
     <Property Name="ID_поставщика" Type="Int32" />
-    <NavigationProperty Name="Поставщики" Relationship="Self.FK__Запчасти__ID_пос__3B75D760" FromRole="Запчасти" ToRole="Поставщики" />
-    <NavigationProperty Name="Склад" Relationship="Self.FK__Склад__ID_запчас__46E78A0C" FromRole="Запчасти" ToRole="Склад" />
-    <NavigationProperty Name="Состав_заказа" Relationship="Self.FK__Состав_за__ID_за__4CA06362" FromRole="Запчасти" ToRole="Состав_заказа" />
+    <NavigationProperty Name="Поставщики" Relationship="Self.FK__Запчасти__ID_пос__3E52440B" FromRole="Запчасти" ToRole="Поставщики" />
+    <NavigationProperty Name="Склад" Relationship="Self.FK__Склад__ID_запчас__49C3F6B7" FromRole="Запчасти" ToRole="Склад" />
+    <NavigationProperty Name="Состав_заказа" Relationship="Self.FK__Состав_за__ID_за__4F7CD00D" FromRole="Запчасти" ToRole="Состав_заказа" />
   </EntityType>
   <EntityType Name="Клиенты">
     <Key>
@@ -39,7 +39,7 @@
     <Property Name="Отчество" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Адрес" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Телефон" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Заказы" Relationship="Self.FK__Заказы__ID_клиен__5535A963" FromRole="Клиенты" ToRole="Заказы" />
+    <NavigationProperty Name="Заказы" Relationship="Self.FK__Заказы__ID_клиен__5812160E" FromRole="Клиенты" ToRole="Заказы" />
   </EntityType>
   <EntityType Name="Пользователь">
     <Key>
@@ -48,8 +48,10 @@
     <Property Name="ID_пользователь" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Логин_пользователя" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Пароль_пользователя" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="Роль_пользователя" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Сотрудники" Relationship="Self.FK__Сотрудник__ID_по__4F7CD00D" FromRole="Пользователь" ToRole="Сотрудники" />
+    <Property Name="Админ" Type="Boolean" />
+    <Property Name="Сотрудник" Type="Boolean" />
+    <Property Name="Пользователь1" Type="Boolean" />
+    <NavigationProperty Name="Сотрудники" Relationship="Self.FK__Сотрудник__ID_по__52593CB8" FromRole="Пользователь" ToRole="Сотрудники" />
   </EntityType>
   <EntityType Name="Поставщики">
     <Key>
@@ -59,7 +61,7 @@
     <Property Name="Название_поставщика" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Адрес" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Телефон" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Запчасти" Relationship="Self.FK__Запчасти__ID_пос__3B75D760" FromRole="Поставщики" ToRole="Запчасти" />
+    <NavigationProperty Name="Запчасти" Relationship="Self.FK__Запчасти__ID_пос__3E52440B" FromRole="Поставщики" ToRole="Запчасти" />
   </EntityType>
   <EntityType Name="Продажи">
     <Key>
@@ -69,7 +71,7 @@
     <Property Name="ID_заказа" Type="Int32" />
     <Property Name="Дата_продажи" Type="DateTime" Precision="0" />
     <Property Name="Сумма" Type="Decimal" Precision="10" Scale="2" />
-    <NavigationProperty Name="Заказы" Relationship="Self.FK__Продажи__ID_зака__5AEE82B9" FromRole="Продажи" ToRole="Заказы" />
+    <NavigationProperty Name="Заказы" Relationship="Self.FK__Продажи__ID_зака__693CA210" FromRole="Продажи" ToRole="Заказы" />
   </EntityType>
   <EntityType Name="Склад">
     <Key>
@@ -78,7 +80,7 @@
     <Property Name="ID_склада" Type="Int32" Nullable="false" />
     <Property Name="ID_запчасти" Type="Int32" />
     <Property Name="Количество" Type="Int32" />
-    <NavigationProperty Name="Запчасти" Relationship="Self.FK__Склад__ID_запчас__46E78A0C" FromRole="Склад" ToRole="Запчасти" />
+    <NavigationProperty Name="Запчасти" Relationship="Self.FK__Склад__ID_запчас__49C3F6B7" FromRole="Склад" ToRole="Запчасти" />
   </EntityType>
   <EntityType Name="Состав_заказа">
     <Key>
@@ -87,8 +89,8 @@
     <Property Name="ID_состава" Type="Int32" Nullable="false" />
     <Property Name="ID_запчасти" Type="Int32" />
     <Property Name="Количество" Type="Int32" />
-    <NavigationProperty Name="Заказы" Relationship="Self.FK__Заказы__ID_соста__571DF1D5" FromRole="Состав_заказа" ToRole="Заказы" />
-    <NavigationProperty Name="Запчасти" Relationship="Self.FK__Состав_за__ID_за__4CA06362" FromRole="Состав_заказа" ToRole="Запчасти" />
+    <NavigationProperty Name="Заказы" Relationship="Self.FK__Заказы__ID_соста__59FA5E80" FromRole="Состав_заказа" ToRole="Заказы" />
+    <NavigationProperty Name="Запчасти" Relationship="Self.FK__Состав_за__ID_за__4F7CD00D" FromRole="Состав_заказа" ToRole="Запчасти" />
   </EntityType>
   <EntityType Name="Сотрудники">
     <Key>
@@ -103,8 +105,8 @@
     <Property Name="Дата_найма" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Должность" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Зарплата" Type="Decimal" Precision="10" Scale="2" />
-    <NavigationProperty Name="Заказы" Relationship="Self.FK__Заказы__ID_сотру__5629CD9C" FromRole="Сотрудники" ToRole="Заказы" />
-    <NavigationProperty Name="Пользователь" Relationship="Self.FK__Сотрудник__ID_по__4F7CD00D" FromRole="Сотрудники" ToRole="Пользователь" />
+    <NavigationProperty Name="Заказы" Relationship="Self.FK__Заказы__ID_сотру__59063A47" FromRole="Сотрудники" ToRole="Заказы" />
+    <NavigationProperty Name="Пользователь" Relationship="Self.FK__Сотрудник__ID_по__52593CB8" FromRole="Сотрудники" ToRole="Пользователь" />
   </EntityType>
   <EntityType Name="Статус_заказа">
     <Key>
@@ -117,9 +119,9 @@
     <Property Name="Город_отправления_заказа" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Дата_получения" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Название" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Заказы" Relationship="Self.FK__Статус_за__ID_за__656C112C" FromRole="Статус_заказа" ToRole="Заказы" />
+    <NavigationProperty Name="Заказы" Relationship="Self.FK__Статус_за__ID_за__5CD6CB2B" FromRole="Статус_заказа" ToRole="Заказы" />
   </EntityType>
-  <Association Name="FK__Заказы__ID_клиен__5535A963">
+  <Association Name="FK__Заказы__ID_клиен__5812160E">
     <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="0..1" />
     <End Role="Заказы" Type="Self.Заказы" Multiplicity="*" />
     <ReferentialConstraint>
@@ -131,7 +133,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Заказы__ID_соста__571DF1D5">
+  <Association Name="FK__Заказы__ID_соста__59FA5E80">
     <End Role="Состав_заказа" Type="Self.Состав_заказа" Multiplicity="0..1" />
     <End Role="Заказы" Type="Self.Заказы" Multiplicity="*" />
     <ReferentialConstraint>
@@ -143,7 +145,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Заказы__ID_сотру__5629CD9C">
+  <Association Name="FK__Заказы__ID_сотру__59063A47">
     <End Role="Сотрудники" Type="Self.Сотрудники" Multiplicity="0..1" />
     <End Role="Заказы" Type="Self.Заказы" Multiplicity="*" />
     <ReferentialConstraint>
@@ -155,7 +157,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Продажи__ID_зака__5AEE82B9">
+  <Association Name="FK__Продажи__ID_зака__693CA210">
     <End Role="Заказы" Type="Self.Заказы" Multiplicity="0..1" />
     <End Role="Продажи" Type="Self.Продажи" Multiplicity="*" />
     <ReferentialConstraint>
@@ -167,7 +169,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Статус_за__ID_за__656C112C">
+  <Association Name="FK__Статус_за__ID_за__5CD6CB2B">
     <End Role="Заказы" Type="Self.Заказы" Multiplicity="0..1" />
     <End Role="Статус_заказа" Type="Self.Статус_заказа" Multiplicity="*" />
     <ReferentialConstraint>
@@ -179,7 +181,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Запчасти__ID_пос__3B75D760">
+  <Association Name="FK__Запчасти__ID_пос__3E52440B">
     <End Role="Поставщики" Type="Self.Поставщики" Multiplicity="0..1" />
     <End Role="Запчасти" Type="Self.Запчасти" Multiplicity="*" />
     <ReferentialConstraint>
@@ -191,7 +193,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Склад__ID_запчас__46E78A0C">
+  <Association Name="FK__Склад__ID_запчас__49C3F6B7">
     <End Role="Запчасти" Type="Self.Запчасти" Multiplicity="0..1" />
     <End Role="Склад" Type="Self.Склад" Multiplicity="*" />
     <ReferentialConstraint>
@@ -203,7 +205,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Состав_за__ID_за__4CA06362">
+  <Association Name="FK__Состав_за__ID_за__4F7CD00D">
     <End Role="Запчасти" Type="Self.Запчасти" Multiplicity="0..1" />
     <End Role="Состав_заказа" Type="Self.Состав_заказа" Multiplicity="*" />
     <ReferentialConstraint>
@@ -215,7 +217,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Сотрудник__ID_по__4F7CD00D">
+  <Association Name="FK__Сотрудник__ID_по__52593CB8">
     <End Role="Пользователь" Type="Self.Пользователь" Multiplicity="0..1" />
     <End Role="Сотрудники" Type="Self.Сотрудники" Multiplicity="*" />
     <ReferentialConstraint>
@@ -227,7 +229,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="unclepistonEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="unclepistonEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Заказы" EntityType="Self.Заказы" />
     <EntitySet Name="Запчасти" EntityType="Self.Запчасти" />
     <EntitySet Name="Клиенты" EntityType="Self.Клиенты" />
@@ -238,39 +240,39 @@
     <EntitySet Name="Состав_заказа" EntityType="Self.Состав_заказа" />
     <EntitySet Name="Сотрудники" EntityType="Self.Сотрудники" />
     <EntitySet Name="Статус_заказа" EntityType="Self.Статус_заказа" />
-    <AssociationSet Name="FK__Заказы__ID_клиен__5535A963" Association="Self.FK__Заказы__ID_клиен__5535A963">
+    <AssociationSet Name="FK__Заказы__ID_клиен__5812160E" Association="Self.FK__Заказы__ID_клиен__5812160E">
       <End Role="Клиенты" EntitySet="Клиенты" />
       <End Role="Заказы" EntitySet="Заказы" />
     </AssociationSet>
-    <AssociationSet Name="FK__Заказы__ID_соста__571DF1D5" Association="Self.FK__Заказы__ID_соста__571DF1D5">
+    <AssociationSet Name="FK__Заказы__ID_соста__59FA5E80" Association="Self.FK__Заказы__ID_соста__59FA5E80">
       <End Role="Состав_заказа" EntitySet="Состав_заказа" />
       <End Role="Заказы" EntitySet="Заказы" />
     </AssociationSet>
-    <AssociationSet Name="FK__Заказы__ID_сотру__5629CD9C" Association="Self.FK__Заказы__ID_сотру__5629CD9C">
+    <AssociationSet Name="FK__Заказы__ID_сотру__59063A47" Association="Self.FK__Заказы__ID_сотру__59063A47">
       <End Role="Сотрудники" EntitySet="Сотрудники" />
       <End Role="Заказы" EntitySet="Заказы" />
     </AssociationSet>
-    <AssociationSet Name="FK__Продажи__ID_зака__5AEE82B9" Association="Self.FK__Продажи__ID_зака__5AEE82B9">
+    <AssociationSet Name="FK__Продажи__ID_зака__693CA210" Association="Self.FK__Продажи__ID_зака__693CA210">
       <End Role="Заказы" EntitySet="Заказы" />
       <End Role="Продажи" EntitySet="Продажи" />
     </AssociationSet>
-    <AssociationSet Name="FK__Статус_за__ID_за__656C112C" Association="Self.FK__Статус_за__ID_за__656C112C">
+    <AssociationSet Name="FK__Статус_за__ID_за__5CD6CB2B" Association="Self.FK__Статус_за__ID_за__5CD6CB2B">
       <End Role="Заказы" EntitySet="Заказы" />
       <End Role="Статус_заказа" EntitySet="Статус_заказа" />
     </AssociationSet>
-    <AssociationSet Name="FK__Запчасти__ID_пос__3B75D760" Association="Self.FK__Запчасти__ID_пос__3B75D760">
+    <AssociationSet Name="FK__Запчасти__ID_пос__3E52440B" Association="Self.FK__Запчасти__ID_пос__3E52440B">
       <End Role="Поставщики" EntitySet="Поставщики" />
       <End Role="Запчасти" EntitySet="Запчасти" />
     </AssociationSet>
-    <AssociationSet Name="FK__Склад__ID_запчас__46E78A0C" Association="Self.FK__Склад__ID_запчас__46E78A0C">
+    <AssociationSet Name="FK__Склад__ID_запчас__49C3F6B7" Association="Self.FK__Склад__ID_запчас__49C3F6B7">
       <End Role="Запчасти" EntitySet="Запчасти" />
       <End Role="Склад" EntitySet="Склад" />
     </AssociationSet>
-    <AssociationSet Name="FK__Состав_за__ID_за__4CA06362" Association="Self.FK__Состав_за__ID_за__4CA06362">
+    <AssociationSet Name="FK__Состав_за__ID_за__4F7CD00D" Association="Self.FK__Состав_за__ID_за__4F7CD00D">
       <End Role="Запчасти" EntitySet="Запчасти" />
       <End Role="Состав_заказа" EntitySet="Состав_заказа" />
     </AssociationSet>
-    <AssociationSet Name="FK__Сотрудник__ID_по__4F7CD00D" Association="Self.FK__Сотрудник__ID_по__4F7CD00D">
+    <AssociationSet Name="FK__Сотрудник__ID_по__52593CB8" Association="Self.FK__Сотрудник__ID_по__52593CB8">
       <End Role="Пользователь" EntitySet="Пользователь" />
       <End Role="Сотрудники" EntitySet="Сотрудники" />
     </AssociationSet>

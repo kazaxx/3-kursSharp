@@ -6,6 +6,16 @@ namespace WpfApp1
 {
     public partial class Vhod : Window
     {
+        public class UserRole
+        {
+            public const string Admin = "admin";
+        }
+
+        public class User
+        {
+            public string Login { get; set; }
+            public string Role { get; set; }
+        }
         public Vhod()
         {
             InitializeComponent();
@@ -24,13 +34,22 @@ namespace WpfApp1
 
             try
             {
-                if (Proverka(login, password))
+                User user = Proverka(login, password);
+                if (user != null)
                 {
-                   Window1 window  = new Window1();
-                    window.Show();
+                    if (user.Role == UserRole.Admin)
+                    {
+                        Window2 adminForm = new Window2();
+                        adminForm.Show();
+                    }
+                    else
+                    {
+                        Window1 window = new Window1();
+                        window.Show();
+                    }
+
                     txtlogin.Clear();
                     txtpassword.Clear();
-
                 }
                 else
                 {
@@ -42,6 +61,33 @@ namespace WpfApp1
                 ShowError("Ошибка авторизации: " + ex.Message);
             }
         }
+        public User Proverka(string login, string password)
+        {
+            try
+            {
+                using (var context = new unclepistonEntities1())
+                {
+                    var пользователь = context.Пользователь.FirstOrDefault(u => u.Логин_пользователя == login && u.Пароль_пользователя == password);
+                    if (пользователь != null)
+                    {
+                        // Преобразование bool? в string
+                        string role = пользователь.Админ.HasValue && пользователь.Админ.Value ? UserRole.Admin : "other_role";
+
+                        return new User { Login = login, Role = role };
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ShowError("Ошибка при обращении к базе данных: " + ex.Message);
+                return null;
+            }
+        }
+
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
@@ -57,22 +103,6 @@ namespace WpfApp1
             this.Visibility = Visibility.Collapsed;
         }
 
-        public bool Proverka(string login, string password)
-        {
-            try
-            {
-                using (var context = new unclepistonEntities())
-                {
-                    var пользователь = context.Пользователь.FirstOrDefault(u => u.Логин_пользователя == login && u.Пароль_пользователя == password);
-                    return пользователь != null;
-                }
-            }
-            catch (Exception ex)
-            {
-                ShowError("Ошибка при обращении к базе данных: " + ex.Message);
-                return false;
-            }
-        }
 
         private void ShowError(string errorMessage)
         {

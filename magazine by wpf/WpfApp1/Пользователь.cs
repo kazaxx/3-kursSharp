@@ -23,7 +23,9 @@ namespace WpfApp1
         public int ID_пользователь { get; set; }
         public string Логин_пользователя { get; set; }
         public string Пароль_пользователя { get; set; }
-        public string Роль_пользователя { get; set; }
+        public Nullable<bool> Админ { get; set; }
+        public Nullable<bool> Сотрудник { get; set; }
+        public Nullable<bool> Пользователь1 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Сотрудники> Сотрудники { get; set; }
