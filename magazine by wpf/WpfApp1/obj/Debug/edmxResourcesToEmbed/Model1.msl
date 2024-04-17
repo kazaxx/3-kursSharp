@@ -1,6 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище unclepistonModelContainer" CdmEntityContainer="unclepistonEntities1">
+  <EntityContainerMapping StorageEntityContainer="Хранилище unclepistonModelContainer" CdmEntityContainer="unclepistonEntities2">
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="unclepistonModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="SecondName" ColumnName="SecondName" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users1">
+      <EntityTypeMapping TypeName="unclepistonModel.users1">
+        <MappingFragment StoreEntitySet="users1">
+          <ScalarProperty Name="ID_user" ColumnName="ID_user" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Заказы">
       <EntityTypeMapping TypeName="unclepistonModel.Заказы">
         <MappingFragment StoreEntitySet="Заказы">

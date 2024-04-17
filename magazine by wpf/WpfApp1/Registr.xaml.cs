@@ -32,7 +32,7 @@ namespace WpfApp1
                 return;
             }
 
-            using (var context = new unclepistonEntities1())
+            using (var context = new unclepistonEntities2())
             {
                 var existingUser = context.Пользователь.FirstOrDefault(u => u.Логин_пользователя == login);
                 if (existingUser != null)

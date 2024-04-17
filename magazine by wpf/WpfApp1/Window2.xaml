@@ -29,7 +29,6 @@
         <Border x:Name="WindowBorder" Background="#332E33" CornerRadius="50">
             <Grid Margin="10">
                 <Border Background="#fdf4e3" CornerRadius="50" Margin="10,42,10,40">
-                    <Button Content="Сохранить" Margin="33,410,699,349" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Button_Click" FontSize="15"/>
                 </Border>
             </Grid>
         </Border>
@@ -42,8 +41,8 @@
                 <DataGridCheckBoxColumn Header="Пользователь" Binding="{Binding Пользователь}" />
             </DataGrid.Columns>
         </DataGrid>
-        
-        <ComboBox x:Name="tableComboBox" SelectedIndex="0" SelectionChanged="TableComboBox_SelectionChanged" Margin="639,115,108,755" RenderTransformOrigin="0.382,1.457">
+        <Button Content="Сохранить" Margin="60,785,936,76" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Button_Click" FontSize="15"/>
+        <!--<ComboBox x:Name="tableComboBoxx" SelectedIndex="0" SelectionChanged="TableComboBox_SelectionChanged" Margin="639,115,108,755" RenderTransformOrigin="0.382,1.457">
             <ComboBoxItem Content=""/>
             <ComboBoxItem Content="Пользователи"/>
             <ComboBoxItem Content="Заказы"/>
@@ -56,9 +55,20 @@
             <ComboBoxItem Content="Состав_заказа"/>
             <ComboBoxItem Content="Сотрудники"/>
             <ComboBoxItem Content="Статус_заказа"/>
-        </ComboBox>
+        </ComboBox>-->
         <DataGrid x:Name="Gtiddd" AutoGenerateColumns="False" Margin="639,150,108,450" ItemsSource="{Binding GridItems}" />
-
+        <Button Content="Word" Margin="60,785,936,76" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Button_Click_Word" FontSize="15"/>
+        <Button Content="Сохранить" Margin="33,455,706,406" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Button_Click" FontSize="15"/>
+        <Label Content="Сформировать отчет:" HorizontalAlignment="Left" Margin="158,703,0,0" VerticalAlignment="Top" FontSize="19" FontWeight="Bold"/>
+        <Button Content="Excel" Margin="269,785,727,76" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Button_Click" FontSize="15"/>
+        <ComboBox x:Name="tableComboBox" SelectedIndex="0" SelectionChanged="TableComboBox_SelectionChanged" Margin="60,750,727,120" RenderTransformOrigin="0.382,1.457">
+            <ComboBoxItem Content=""/>
+            <ComboBoxItem Content="Запчасти"/>
+            <ComboBoxItem Content="Клиенты"/>
+            <ComboBoxItem Content="Поставщики"/>
+            <ComboBoxItem Content="Сотрудники"/>
+            <ComboBoxItem Content="Статус_заказа"/>
+        </ComboBox>
 
     </Grid>
 </Window>

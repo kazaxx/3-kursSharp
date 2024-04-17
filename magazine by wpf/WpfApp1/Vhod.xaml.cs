@@ -65,7 +65,7 @@ namespace WpfApp1
         {
             try
             {
-                using (var context = new unclepistonEntities1())
+                using (var context = new unclepistonEntities2())
                 {
                     var пользователь = context.Пользователь.FirstOrDefault(u => u.Логин_пользователя == login && u.Пароль_пользователя == password);
                     if (пользователь != null)
