@@ -1,4 +1,5 @@
 ﻿using Microsoft.Office.Interop.Word;
+using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,31 +77,25 @@ namespace WpfApp1
         private void GenerateWordReport(string tableName, string filePath)
         {
             var data = GetDataFromTable(tableName);
-            var columnNames = GetColumnNames(tableName); // Получаем названия столбцов из базы данных
+            var columnNames = GetColumnNames(tableName);
 
             if (data != null && data.Any() && columnNames != null && columnNames.Any())
             {
-                // Создаем приложение Word
                 Microsoft.Office.Interop.Word.Application app = new Microsoft.Office.Interop.Word.Application();
                 app.Visible = false;
 
-                // Создаем новый документ
                 Document doc = app.Documents.Add();
 
-                // Добавляем таблицу
                 Table table = doc.Tables.Add(doc.Range(), data.Count + 1, columnNames.Count);
 
-                // Устанавливаем границы для таблицы
-                table.Borders.Enable = 1; // Включаем все границы
-                table.Borders.OutsideLineStyle = WdLineStyle.wdLineStyleSingle; // Устанавливаем стиль для внешних границ
+                table.Borders.Enable = 1;
+                table.Borders.OutsideLineStyle = WdLineStyle.wdLineStyleSingle;
 
-                // Устанавливаем названия столбцов
                 for (int colIndex = 1; colIndex <= columnNames.Count; colIndex++)
                 {
                     table.Cell(1, colIndex).Range.Text = columnNames[colIndex - 1];
                 }
 
-                // Устанавливаем границы для внутренних горизонтальных линий
                 foreach (Row row in table.Rows)
                 {
                     foreach (Cell cell in row.Cells)
@@ -109,7 +104,6 @@ namespace WpfApp1
                     }
                 }
 
-                // Устанавливаем границы для внутренних вертикальных линий
                 for (int colIndex = 1; colIndex <= table.Columns.Count; colIndex++)
                 {
                     foreach (Cell cell in table.Columns[colIndex].Cells)
@@ -118,8 +112,7 @@ namespace WpfApp1
                     }
                 }
 
-                // Заполняем таблицу данными
-                int rowIndex = 2; // Начинаем со второй строки
+                int rowIndex = 2;
                 foreach (var row in data)
                 {
                     int colIndex = 1;
@@ -138,10 +131,8 @@ namespace WpfApp1
                     rowIndex++;
                 }
 
-                // Сохраняем документ
                 doc.SaveAs(filePath);
 
-                // Закрываем Word
                 doc.Close();
                 app.Quit();
             }
@@ -186,7 +177,7 @@ namespace WpfApp1
             {
                 Запчасти.Название_запчасти,
                 Запчасти.Производитель,
-                Запчасти.Цена
+                (object)(Запчасти.Цена ?? 0)
             }).ToList();
                 case "Клиенты":
                     return dbContext.Клиенты.Select(Клиенты => new List<object>
@@ -204,7 +195,7 @@ namespace WpfApp1
                 Сотрудники.Имя,
                 Сотрудники.Отчество,
                 Сотрудники.Должность,
-                Сотрудники.Зарплата
+                (object)(Сотрудники.Зарплата ?? 0)
             }).ToList();
 
                 case "Статус_заказа":
@@ -220,9 +211,85 @@ namespace WpfApp1
                     return null;
             }
         }
+
+
         private void TableComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             //Button_Click_Word(sender, e);
         }
+
+        private void Button_Click_Excel(object sender, RoutedEventArgs e)
+        {
+            var selectedTable = (tableComboBox.SelectedItem as ComboBoxItem)?.Content.ToString();
+
+            if (!string.IsNullOrEmpty(selectedTable))
+            {
+                var filePath = GetSaveFilePathExcel();
+                if (!string.IsNullOrEmpty(filePath))
+                {
+                    GenerateExcelReport(selectedTable, filePath);
+                    ShowError("Отчет успешно сформирован и сохранен.");
+                }
+            }
+            else
+            {
+                ShowError("Выберите таблицу для создания отчета.");
+            }
+        }
+
+
+        private void GenerateExcelReport(string tableName, string filePath)
+        {
+            var data = GetDataFromTable(tableName);
+            var columnNames = GetColumnNames(tableName);
+
+            if (data != null && data.Any() && columnNames != null && columnNames.Any())
+            {
+                Microsoft.Office.Interop.Excel.Application excelApp = new Microsoft.Office.Interop.Excel.Application();
+                excelApp.Visible = false;
+
+                Workbook workbook = excelApp.Workbooks.Add();
+                Worksheet worksheet = workbook.Sheets[1];
+
+                for (int colIndex = 0; colIndex < columnNames.Count; colIndex++)
+                {
+                    worksheet.Cells[1, colIndex + 1] = columnNames[colIndex];
+                }
+
+                for (int rowIndex = 0; rowIndex < data.Count; rowIndex++)
+                {
+                    for (int colIndex = 0; colIndex < data[rowIndex].Count; colIndex++)
+                    {
+                        worksheet.Cells[rowIndex + 2, colIndex + 1] = data[rowIndex][colIndex];
+                    }
+                }
+
+                workbook.SaveAs(filePath, XlFileFormat.xlOpenXMLWorkbook);
+                workbook.Close();
+                excelApp.Quit();
+            }
+            else
+            {
+                ShowError("Нет данных для создания отчета или отсутствуют названия столбцов.");
+            }
+        }
+
+        private string GetSaveFilePathExcel()
+        {
+            var dialog = new Microsoft.Win32.SaveFileDialog
+            {
+                Filter = "Excel Workbook (*.xlsx)|*.xlsx",
+                DefaultExt = ".xlsx",
+                AddExtension = true
+            };
+
+            bool? result = dialog.ShowDialog();
+
+            if (result == true)
+                return dialog.FileName;
+
+            return null;
+        }
+
     }
 }

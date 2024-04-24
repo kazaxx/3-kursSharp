@@ -60,7 +60,7 @@
         <Button Content="Word" Margin="60,785,936,76" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Button_Click_Word" FontSize="15"/>
         <Button Content="Сохранить" Margin="33,455,706,406" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Button_Click" FontSize="15"/>
         <Label Content="Сформировать отчет:" HorizontalAlignment="Left" Margin="158,703,0,0" VerticalAlignment="Top" FontSize="19" FontWeight="Bold"/>
-        <Button Content="Excel" Margin="269,785,727,76" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Button_Click" FontSize="15"/>
+        <Button Content="Excel" Margin="269,785,727,76" Style="{StaticResource RoundedButtonStyle}" Background="#332E33" Foreground="White" Click="Button_Click_Excel" FontSize="15"/>
         <ComboBox x:Name="tableComboBox" SelectedIndex="0" SelectionChanged="TableComboBox_SelectionChanged" Margin="60,750,727,120" RenderTransformOrigin="0.382,1.457">
             <ComboBoxItem Content=""/>
             <ComboBoxItem Content="Запчасти"/>
