@@ -13,10 +13,10 @@ namespace WpfApp1
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class unclepistonEntities2 : DbContext
+    public partial class unclepistonEntities3 : DbContext
     {
-        public unclepistonEntities2()
-            : base("name=unclepistonEntities2")
+        public unclepistonEntities3()
+            : base("name=unclepistonEntities3")
         {
         }
     
@@ -25,8 +25,6 @@ namespace WpfApp1
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<users> users { get; set; }
-        public virtual DbSet<users1> users1 { get; set; }
         public virtual DbSet<Заказы> Заказы { get; set; }
         public virtual DbSet<Запчасти> Запчасти { get; set; }
         public virtual DbSet<Клиенты> Клиенты { get; set; }

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dVMtrFFX4B0fToAJnRl50K1Mspe5ck6s5pAPs5nPHsDvUhPLp95mMNM34FTaKRbfn+uZNVA+2LpvqPlAbajHAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\WpfApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aremi\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
+    "C:\\Users\\aremi\\.nuget\\packages\\entityframework.ru\\6.2.0\\entityframework.ru.6.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

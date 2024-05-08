@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\",
+  "WorkspaceRootPath": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\desktop\\magazine by wpf\\wpfapp1\\window2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\window2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\Desktop\\magazine by wpf\\wpfapp1\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\wpfapp1\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\Desktop\\magazine by wpf\\wpfapp1\\registr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\registr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\documents\\github\\3-kurssharp\\magazine by wpf\\wpfapp1\\window2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\window2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\Desktop\\magazine by wpf\\wpfapp1\\vhod.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\vhod.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\Desktop\\magazine by wpf\\wpfapp1\\\u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0438.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\\u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0438.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\Desktop\\magazine by wpf\\wpfapp1\\vhod.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\wpfapp1\\vhod.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\vhod.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\Desktop\\magazine by wpf\\wpfapp1\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\documents\\github\\3-kurssharp\\magazine by wpf\\wpfapp1\\registr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\registr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\wpfapp1\\registr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\registr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|c:\\users\\aremi\\documents\\github\\3-kurssharp\\magazine by wpf\\wpfapp1\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\Desktop\\magazine by wpf\\wpfapp1\\porshe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\wpfapp1\\vhod.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\vhod.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\wpfapp1\\porshe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4E8E8082-1ADE-4DBA-A151-5C12C2291A02}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\porshe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -42,61 +42,65 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "\u041F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0438.cs",
-              "DocumentMoniker": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\\u041F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0438.cs",
-              "RelativeDocumentMoniker": "WpfApp1\\\u041F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0438.cs",
-              "ToolTip": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\\u041F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0438.cs",
-              "RelativeToolTip": "WpfApp1\\\u041F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0438.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "Registr.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Registr.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Registr.xaml.cs",
+              "ToolTip": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Registr.xaml.cs",
+              "RelativeToolTip": "WpfApp1\\Registr.xaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAtwCIAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T18:12:01.288Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Model1.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Model1.edmx",
-              "RelativeDocumentMoniker": "WpfApp1\\Model1.edmx",
-              "ToolTip": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Model1.edmx [Diagram1]",
-              "RelativeToolTip": "WpfApp1\\Model1.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-04-17T18:10:22.688Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Registr.xaml",
-              "DocumentMoniker": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Registr.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\Registr.xaml",
-              "ToolTip": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Registr.xaml",
-              "RelativeToolTip": "WpfApp1\\Registr.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-17T18:01:07.389Z"
+              "WhenOpened": "2024-05-08T15:16:49.512Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Vhod.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Vhod.xaml.cs",
-              "RelativeDocumentMoniker": "WpfApp1\\Vhod.xaml.cs",
-              "ToolTip": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Vhod.xaml.cs",
-              "RelativeToolTip": "WpfApp1\\Vhod.xaml.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAIAwwEMAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T16:02:07.097Z"
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Model1.edmx",
+              "RelativeDocumentMoniker": "WpfApp1\\Model1.edmx",
+              "ToolTip": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "WpfApp1\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-05-08T15:15:13.033Z",
+              "EditorCaption": " [Diagram1]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "Registr.xaml",
+              "DocumentMoniker": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Registr.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\Registr.xaml",
+              "ToolTip": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Registr.xaml",
+              "RelativeToolTip": "WpfApp1\\Registr.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-17T18:01:07.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Vhod.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Vhod.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Vhod.xaml.cs",
+              "ToolTip": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Vhod.xaml.cs",
+              "RelativeToolTip": "WpfApp1\\Vhod.xaml.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAtwEMAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T16:02:07.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Window2.xaml",
-              "DocumentMoniker": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Window2.xaml",
+              "DocumentMoniker": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Window2.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\Window2.xaml",
-              "ToolTip": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Window2.xaml",
+              "ToolTip": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Window2.xaml",
               "RelativeToolTip": "WpfApp1\\Window2.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-03-18T15:23:14.716Z",
@@ -104,35 +108,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Window2.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Window2.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Window2.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp1\\Window2.xaml.cs",
-              "ToolTip": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Window2.xaml.cs",
+              "ToolTip": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Window2.xaml.cs",
               "RelativeToolTip": "WpfApp1\\Window2.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAlAAAA",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAjwK8AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T16:00:39.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Vhod.xaml",
-              "DocumentMoniker": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Vhod.xaml",
+              "DocumentMoniker": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Vhod.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\Vhod.xaml",
-              "ToolTip": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Vhod.xaml",
+              "ToolTip": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Vhod.xaml",
               "RelativeToolTip": "WpfApp1\\Vhod.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-28T20:37:41.585Z"
+              "WhenOpened": "2024-02-28T20:37:41.585Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Porshe.xaml",
-              "DocumentMoniker": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Porshe.xaml",
+              "DocumentMoniker": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Porshe.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\Porshe.xaml",
-              "ToolTip": "C:\\Users\\aremi\\Desktop\\magazine by wpf\\WpfApp1\\Porshe.xaml",
+              "ToolTip": "C:\\Users\\aremi\\Documents\\GitHub\\3-kursSharp\\magazine by wpf\\WpfApp1\\Porshe.xaml",
               "RelativeToolTip": "WpfApp1\\Porshe.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-02-28T15:47:56.683Z"

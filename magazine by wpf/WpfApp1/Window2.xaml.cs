@@ -10,7 +10,7 @@ namespace WpfApp1
 {
     public partial class Window2
     {
-        private unclepistonEntities2 dbContext = new unclepistonEntities2();
+        private unclepistonEntities3 dbContext = new unclepistonEntities3();
 
         public Window2()
         {
@@ -174,11 +174,12 @@ namespace WpfApp1
             }).ToList();
                 case "Запчасти":
                     return dbContext.Запчасти.Select(Запчасти => new List<object>
-            {
-                Запчасти.Название_запчасти,
-                Запчасти.Производитель,
-                (object)(Запчасти.Цена ?? 0)
-            }).ToList();
+    {
+        Запчасти.Название_запчасти,
+        Запчасти.Производитель,
+        (object)(decimal?)Запчасти.Цена ?? 0
+    }).ToList();
+
                 case "Клиенты":
                     return dbContext.Клиенты.Select(Клиенты => new List<object>
             {
@@ -291,5 +292,29 @@ namespace WpfApp1
             return null;
         }
 
+        private void Button_Click_Deleate(object sender, RoutedEventArgs e)
+        {
+            // Получаем выбранную строку из DataGrid
+            var selectedUser = usersDataGrid.SelectedItem as Пользователь;
+
+            if (selectedUser != null)
+            {
+                try
+                {
+                    // Удаляем выбранную строку из источника данных
+                    dbContext.Пользователь.Remove(selectedUser);
+                    dbContext.SaveChanges();
+                    ShowError("Строка успешно удалена.");
+                }
+                catch (Exception ex)
+                {
+                    ShowError("Ошибка при удалении строки: " + ex.Message);
+                }
+            }
+            else
+            {
+                ShowError("Выберите строку для удаления.");
+            }
+        }
     }
 }

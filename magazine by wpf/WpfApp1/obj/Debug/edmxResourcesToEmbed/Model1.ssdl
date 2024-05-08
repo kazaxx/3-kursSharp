@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Хранилище unclepistonModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="users">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="int" Nullable="false" />
-    <Property Name="Login" Type="varchar" MaxLength="255" />
-    <Property Name="Password" Type="varchar" MaxLength="255" />
-    <Property Name="FirstName" Type="varchar" MaxLength="255" />
-    <Property Name="SecondName" Type="varchar" MaxLength="255" />
-    <Property Name="Position" Type="varchar" MaxLength="255" />
-    <Property Name="Department" Type="varchar" MaxLength="255" />
-  </EntityType>
-  <EntityType Name="users1">
-    <Key>
-      <PropertyRef Name="ID_user" />
-    </Key>
-    <Property Name="ID_user" Type="int" Nullable="false" />
-    <Property Name="login" Type="varchar" MaxLength="256" />
-    <Property Name="password" Type="varchar" MaxLength="256" />
-  </EntityType>
   <EntityType Name="Заказы">
     <Key>
       <PropertyRef Name="ID_заказа" />
@@ -232,8 +212,6 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="Хранилище unclepistonModelContainer">
-    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="users1" EntityType="Self.users1" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Заказы" EntityType="Self.Заказы" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Запчасти" EntityType="Self.Запчасти" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Клиенты" EntityType="Self.Клиенты" Schema="dbo" store:Type="Tables" />

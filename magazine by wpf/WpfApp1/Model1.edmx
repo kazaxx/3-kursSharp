@@ -5,26 +5,6 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="Хранилище unclepistonModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="users">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="Login" Type="varchar" MaxLength="255" />
-          <Property Name="Password" Type="varchar" MaxLength="255" />
-          <Property Name="FirstName" Type="varchar" MaxLength="255" />
-          <Property Name="SecondName" Type="varchar" MaxLength="255" />
-          <Property Name="Position" Type="varchar" MaxLength="255" />
-          <Property Name="Department" Type="varchar" MaxLength="255" />
-        </EntityType>
-        <EntityType Name="users1">
-          <Key>
-            <PropertyRef Name="ID_user" />
-          </Key>
-          <Property Name="ID_user" Type="int" Nullable="false" />
-          <Property Name="login" Type="varchar" MaxLength="256" />
-          <Property Name="password" Type="varchar" MaxLength="256" />
-        </EntityType>
         <EntityType Name="Заказы">
           <Key>
             <PropertyRef Name="ID_заказа" />
@@ -237,8 +217,6 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="Хранилище unclepistonModelContainer">
-          <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="users1" EntityType="Self.users1" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Заказы" EntityType="Self.Заказы" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Запчасти" EntityType="Self.Запчасти" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Клиенты" EntityType="Self.Клиенты" Schema="dbo" store:Type="Tables" />
@@ -291,26 +269,6 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="unclepistonModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="users">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="Login" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="SecondName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="Position" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="Department" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-        </EntityType>
-        <EntityType Name="users1">
-          <Key>
-            <PropertyRef Name="ID_user" />
-          </Key>
-          <Property Name="ID_user" Type="Int32" Nullable="false" />
-          <Property Name="login" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
-          <Property Name="password" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
-        </EntityType>
         <EntityType Name="Заказы">
           <Key>
             <PropertyRef Name="ID_заказа" />
@@ -540,9 +498,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="unclepistonEntities2" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="users" EntityType="Self.users" />
-          <EntitySet Name="users1" EntityType="Self.users1" />
+        <EntityContainer Name="unclepistonEntities3" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Заказы" EntityType="Self.Заказы" />
           <EntitySet Name="Запчасти" EntityType="Self.Запчасти" />
           <EntitySet Name="Клиенты" EntityType="Self.Клиенты" />
@@ -595,29 +551,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище unclepistonModelContainer" CdmEntityContainer="unclepistonEntities2">
-          <EntitySetMapping Name="users">
-            <EntityTypeMapping TypeName="unclepistonModel.users">
-              <MappingFragment StoreEntitySet="users">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="Login" ColumnName="Login" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
-                <ScalarProperty Name="SecondName" ColumnName="SecondName" />
-                <ScalarProperty Name="Position" ColumnName="Position" />
-                <ScalarProperty Name="Department" ColumnName="Department" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="users1">
-            <EntityTypeMapping TypeName="unclepistonModel.users1">
-              <MappingFragment StoreEntitySet="users1">
-                <ScalarProperty Name="ID_user" ColumnName="ID_user" />
-                <ScalarProperty Name="login" ColumnName="login" />
-                <ScalarProperty Name="password" ColumnName="password" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
+        <EntityContainerMapping StorageEntityContainer="Хранилище unclepistonModelContainer" CdmEntityContainer="unclepistonEntities3">
           <EntitySetMapping Name="Заказы">
             <EntityTypeMapping TypeName="unclepistonModel.Заказы">
               <MappingFragment StoreEntitySet="Заказы">
